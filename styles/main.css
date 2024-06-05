@@ -1,172 +1,125 @@
-/* the styles for the elements */
+/* Reset styles */
 * {
-	margin: 0;
-	padding: 0;
+    box-sizing: border-box; /* Box-sizing reset */
+    margin: 0; /* Margin reset */
+    padding: 0; /* Padding reset */
 }
-html {
-	background-color: white;
-}
+
+/* Global styles */
 body {
-	font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    width: 800px;
-    margin: 0 auto;
-    border: 3px solid #931420;
-    background-color: #fffded;
+    font-family: Arial, Helvetica, sans-serif; /* Font family */
+    font-size: 100%; /* Base font size */
+    width: 600px; /* Page width */
+    margin: 0 auto; /* Centering the page */
+    border: 3px solid #931420; /* Border for the entire page */
+    background-color: #fffded; /* Background color for the body */
 }
-a:focus, a:hover {
-	font-style: italic;
+
+html {
+    background-color: white; /* Background color for the HTML element */
 }
-/* the styles for the header */
+
 header {
-	padding: 1.5em 0 2em 0;
-	border-bottom: 3px solid #931420;
-		background-image: -moz-linear-gradient(
-	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
-	background-image: -webkit-linear-gradient(
-	    30deg, #f6bb73 0%, #fffded 30%, white 50%, #fffded 80%, #f6bb73 100%);
-	background-image: -o-linear-gradient(
-	    30deg, #f6bb73 0%, #fffded 30%, white 50%, #fffded 80%, #f6bb73 100%);
-	background-image: linear-gradient(
-	    30deg, #f6bb73 0%, #fffded 30%, white 50%, #fffded 80%, #f6bb73 100%);
-}
-header h2 {
-	font-size: 175%;
-	color: #800000;
-}
-header h3 {
-	font-size: 130%;
-	font-style: italic;
-}
-header img {
-	float: left;
-	padding: 0 30px;
-}
-.shadow {
-	text-shadow: 2px 2px 2px #800000;
-}
-/* the styles for the navigation menu */
-#nav_menu ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	position: relative;
-}
-#nav_menu ul li {
-	float: left;
-}
-#nav_menu ul li a {
-    display: block;
-    width: 160px;
-    text-align: center;
-    padding: 1em 0;
-    text-decoration: none;
-    background-color: #800000;
-    color: white;
-    font-weight: bold;
-}
-#nav_menu a.current {
-	color: yellow;
-}
-#nav_menu ul ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-}
-#nav_menu ul ul li {
-	float: none;
-}
-#nav_menu ul li:hover > ul {
-	display: block;
-}
-#nav_menu > ul::after {
-    content: "";
-    clear: both;
-    display: block;
-}
-/* the styles for the main content */
-main {
-	clear: left;
+    border-bottom: 3px solid #931420; /* Border for the header */
 }
 
-/* the styles for the section */
-section {
-	width: 525px;
-	float: right;
-	padding: 0 20px 20px 20px;
-}
-section h1 {
-	font-size: 150%;
-	padding: .5em 0 .25em 0;
-	margin: 0;
-}
-section h2 {
-	color: #800000;
-	font-size: 130%;
-	padding: .5em 0 .25em 0;
-}
-section p {
-	padding-bottom: .5em;
-}
-section blockquote {
-	padding: 0 2em;
-	font-style: italic;
-}
-section ul {
-	padding: 0 0 .25em 1.25em;
-	list-style-type: circle;
-}
-section li {
-	padding-bottom: .35em;
+main h1 {
+    border-top: 3px solid #931420; /* Top border for main h1 */
+    border-bottom: 3px solid #931420; /* Bottom border for main h1 */
 }
 
-/* the styles for the article */
-article {
-	padding: .5em 0;
-	border-top: 2px solid #800000;
-	border-bottom: 2px solid #800000;
-}
-article h2 {
-	padding-top: 0;
-}
-article h3 {
-	font-size: 105%;
-	padding-bottom: .25em;
-}
-article img {
-	float: right;
-	margin: .5em 0 1em 1em;
-	border: 1px solid black;
-}
-
-/* the styles for the aside */
-aside {
-	width: 215px;
-	float: right;
-	padding: 0 0 20px 20px;
-}
-aside h2 {
-	color: #800000;
-	font-size: 130%;
-	padding: .5em 0 .25em 0;
-}
-
-aside h3 {
-	font-size: 105%;
-	padding-bottom: .25em;
-}
-aside img {
-	padding-bottom: 1em;
-}
-
-/* the styles for the footer */
 footer {
-	background-color: #931420;
-	clear: both;
-
+    background-color: #931420; /* Background color for the footer */
+    color: white; /* Text color for the footer */
 }
+
+/* Header styles */
+header {
+    padding-top: 1.5em; /* Top padding for the header */
+    padding-bottom: 2em; /* Bottom padding for the header */
+}
+
+header h2,
+header h3 {
+    text-indent: 0; /* Reset text indentation for h2 and h3 in header */
+    padding-right: 30px; /* Right padding for h2 and h3 in header */
+    padding-left: 30px; /* Left padding for h2 and h3 in header */
+}
+
+/* Main content styles */
+main {
+    padding-right: 30px; /* Right padding for main content */
+    padding-left: 30px; /* Left padding for main content */
+}
+
+main h1 {
+    padding-top: .3em; /* Top padding for main h1 */
+    padding-bottom: .3em; /* Bottom padding for main h1 */
+}
+
+main h2 {
+    padding-top: .5em; /* Top padding for main h2 */
+    padding-bottom: .25em; /* Bottom padding for main h2 */
+}
+
+main h3 {
+    padding-bottom: .25em; /* Bottom padding for main h3 */
+}
+
+main img {
+    padding-bottom: 1em; /* Bottom padding for images in main content */
+}
+
+main p {
+    padding-bottom: .5em; /* Bottom padding for paragraphs in main content */
+}
+
+main blockquote {
+    padding-right: 2em; /* Right padding for blockquotes in main content */
+    padding-left: 2em; /* Left padding for blockquotes in main content */
+}
+
+ul {
+    padding-bottom: .25em; /* Bottom padding for unordered lists */
+    padding-left: 1.25em; /* Left padding for unordered lists */
+}
+
+li {
+    padding-bottom: .35em; /* Bottom padding for list items */
+}
+
+/* Footer styles */
 footer p {
-	text-align: center;
-	color: white;
-	padding: 1em 0;
+    text-align: center; /* Center-align text in footer paragraphs */
+}
+
+/* Additional styles */
+blockquote {
+    font-style: italic; /* Italic text for blockquotes */
+}
+
+header {
+    background: linear-gradient(30deg, #f6bb73 0%, white 30%, white 50%, white 80%, #f6bb73 100%); /* Gradient background for header */
+}
+
+main img {
+    margin-top: 5px; /* Top margin for images in main content */
+    margin-bottom: 5px; /* Bottom margin for images in main content */
+}
+
+main h1 {
+    margin-top: 13px; /* Top margin for main h1 */
+    margin-bottom: 1.2rem; /* Bottom margin for main h1 */
+    border: solid 3px #b85f20; /* Border for main h1 */
+    border-radius: 5px; /* Border radius for main h1 */
+    box-shadow: 4.2px 4.2px black; /* Box shadow for main h1 */
+    background-color: white; /* Background color for main h1 */
+    text-indent: 0.5rem; /* Text indentation for main h1 */
+    outline: 1px solid rgb(10, 0, 0); /* Outline for main h1 */
+    outline-offset: 10px; /* Outline offset for main h1 */
+}
+
+/* Additional styles */
+.shadow {
+    text-shadow: 1px 1px #800000; /* Text shadow for elements with class "shadow" */
 }
